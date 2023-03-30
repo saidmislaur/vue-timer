@@ -1,7 +1,7 @@
 <template>
   <div class="timer">
     <div class="timer__head">
-      <span v-bind:class="{ active: isStart }">{{ timer }}</span>
+      <span :class="{ active: isStart }">{{ timer }}</span>
     </div>
     <div class="timer__footer">
       <StopIcon v-if="isStart === true" @click="pauseTimer" />

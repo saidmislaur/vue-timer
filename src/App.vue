@@ -24,7 +24,7 @@ export default {
   },
   methods: {
     addTimer() {
-      this.timersList.push(this.timersList.length - 1 + 1);
+      this.timersList.push(this.timersList.length + 1);
     },
   },
   components: {
